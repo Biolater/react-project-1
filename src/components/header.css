@@ -8,6 +8,11 @@
     height: 72px;
 }
 
+.logo{
+    cursor: pointer;
+}
+
+
 ul {
     display: flex;
     align-items: center;
@@ -24,6 +29,12 @@ ul li {
     color: var(--nav-text-color);
 }
 
+
+
+li{
+    list-style: none;
+}
+
 .navbar__login-button button {
     all: unset;
     padding: 6px 16px;
@@ -35,12 +46,63 @@ ul li {
     line-height: 19.36px;
 }
 
+*{
+    transition: .3s;
+}
+
+
+
+.toggle-button{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.canvas-open{
+    right: 0px!important;
+}
+
+.canvas-menu{
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    background-color: var(--nav-button-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas-menu li {
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--nav-text-color);
+    font-size: 50px;
+}
+
+.canvas-menu li:hover{
+    color: #fff;
+}
+
+
 
 /* Small screens (phones) */
 @media (max-width: 576px) {
     /* Styles for small screens */
-    .navbar{
-        flex-wrap: wrap;
+    .navbar ul{
+        display: none;
+    }
+    .navbar__login-button{
+        display: none;
+    }
+
+    .toggle-button{
+        display: block;
     }
 }
 
