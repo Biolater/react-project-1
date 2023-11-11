@@ -1,0 +1,66 @@
+.navbar {
+    padding: 0px 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--nav-text-color);
+}
+
+.navbar__login-button button {
+    all: unset;
+    padding: 6px 16px;
+    background: var(--nav-button-bg);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Inter";
+    line-height: 19.36px;
+}
+
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+    /* Styles for small screens */
+    .navbar{
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for medium screens */
+}
+
+/* Large screens (desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Styles for large sc  reens */
+    .navbar{
+        max-width: 769px;
+    }
+}
+
+/* Extra-large screens (large desktops) */
+@media (min-width: 993px) and (max-width: 1280px) {
+    /* Styles for extra-large screens */
+    .navbar{
+        max-width: 993px;
+    }
+}
